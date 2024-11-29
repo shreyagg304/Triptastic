@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(115deg, rgba(21, 32, 60, 0.8), rgba(40, 105, 121, 0.7)), url('bgimg.png');
+    background-size: cover;
+}
+
+.username , .password{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    position: absolute;
+    margin-left: 230px;
+}
+
+label[for="remember"]{
+  font-weight: bold;
+  margin-top: 1.3px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    color: #001769;
+    margin: 10px 0;
+}
+
+form {
+    max-width: 500px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #808080ae;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    background-color: #001769;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #001769;
+    border: 1px solid #001769;
+}
+
+@media only screen and (max-width: 320px){
+    .icon{
+        margin: 185px;
+    }
+    form {
+        width: 250px;
+    }
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.textcenter {
+  text-align: center;
+}
+body{
+  margin: 0px;
+}
+
+/*navigation bar*/
+.navbar {
+  display: flex;
+  height: 6rem;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  color: white;
+  background-color: #050577;
+  z-index: 1000;
+}
+.navbar-nav{
+  margin-left: auto;
+}
+.logo {
+  background-image: url(twlogo.jpg);
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+.nav-item {
+  padding: 1vw;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+.nav-item a.nav-link {
+  color: white; 
+}
+.custom-light-background{
+  background-color: #050577;
+}
+.custom-light-background .nav-item:hover {
+  background-color: #040459;
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+/*slideshow*/
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  opacity: .9;
+}
+
+/* slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {opacity: .8;}
+  to {opacity: 1;}
+}
+
+/*caption text*/
+.text {
+  color: #040459;
+  font-size: 80px;
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 8px white;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .text {
+      font-size: 40px;
+      bottom: 10%;
+  }
+}
+
+/*top destination section*/
+.topdes {
+  background-color: #e5e1e1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.titlefirst {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.titlefirst p {
+  color: grey;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.titlefirst h2 {
+  color: #040459;
+  font-family: 'Playfair Display',serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+/*boxes*/
+.box {
+  height: 100%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+p.placename{
+  font-size: 25px;
+  color: #061a3a;
+  font-weight: bold;
+}
+.image-container {
+  height: 350px;
+  overflow: hidden;
+}
+.box-img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.intro{
+  font-size: 16px;
+  margin-top: 10px;
+}
+.box-img:hover {
+  transform: scale(1.1);
+}
+.btn-box a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #061a3a;
+  border: 1px solid #e4e8e9;
+  border-radius: 4px;
+  padding: 2% 5%;
+  text-align: center;
+  text-decoration: none;
+}
+a{
+  background-color: transparent;
+  text-decoration: none;
+}
+.btn-box a:hover {
+  background-color: #040459;
+  color: white;
+}
+
+div.col-md-4.mb-4, div.row.custom-row, div.box, div.desmen.row, div.container-fluid.w-100{
+  margin: 0;
+  padding: 0;
+}
+
+/*review*/
+.review h1 {
+  position: relative;
+  margin-top: 20px;
+  padding: 10% 0;
+  background-image: url('ssimg_4.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 50px;
+  font-family: 'Playfair Display',serif;
+  color: #061a3a;
+  font-weight: 700;
+}
+.review {
+  background: #f1f1f1;
+  color: #434343;
+}
+.border2 {
+  width: 20%;
+  height: 5px;
+  background: #6ab04c;
+  margin: 2% 40% 2% 40%;
+}
+.testimonial {
+  background: #fff;
+  padding: 10px;
+  margin: 0 20px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.stars {
+  color: #6ab04c;
+  margin-bottom: 10px;
+}
+.reviewswritten{
+  font-size: 16px;
+}
+
+/*footer*/
+.footerpart {
+  margin-top: 20px;
+  background-color: #040459;
+  color: white;
+  padding: 50px 20px;
+  font-family: 'Playfair Display',serif;
+}
+.footerpart div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+form input {
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+form button {
+  width: 20%;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 30%;
+  display: block;
+  margin-top: 5%;
+}
+.social-icons {
+  margin-top: 16px;
+}
+.social-icons i {
+  margin: 10px;
+  cursor: pointer;
+}
+.font{
+  font-family: 'Playfair Display',serif;
+}
